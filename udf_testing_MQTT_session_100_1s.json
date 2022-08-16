@@ -1,0 +1,2464 @@
+{
+  "id": "62f1080a30c49e0001d74a4e",
+  "modified": 1660021788,
+  "name": "Test",
+  "dataDefinition": {
+    "id": "62c28b4530c49e0007219e6e",
+    "modified": 1660015573,
+    "name": "DDUDFManual",
+    "schema": {
+      "metadata": {
+        "type": "json"
+      },
+      "type": "object",
+      "properties": {
+        "Context": {
+          "properties": {
+            "UDFVersion": {
+              "type": "string",
+              "metadata": {
+                "position": "UDFVersion",
+                "name": "UDFVersion",
+                "description": ""
+              }
+            },
+            "Type": {
+              "type": "string",
+              "metadata": {
+                "position": "Type",
+                "name": "Type",
+                "description": ""
+              }
+            },
+            "StartDateTime": {
+              "type": "string",
+              "metadata": {
+                "position": "StartDateTime",
+                "name": "StartDateTime",
+                "description": "StartDateTime"
+              }
+            },
+            "DATA": {
+              "items": [
+                {
+                  "properties": {
+                    "UniqueID": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "UniqueID",
+                        "name": "UniqueID",
+                        "description": ""
+                      }
+                    }
+                  },
+                  "type": "object",
+                  "metadata": {
+                    "position": "1",
+                    "description": ""
+                  }
+                }
+              ],
+              "type": "array",
+              "metadata": {
+                "position": "DATA",
+                "description": ""
+              }
+            },
+            "Device": {
+              "type": "string",
+              "metadata": {
+                "position": "Device",
+                "name": "Device",
+                "description": "Device"
+              }
+            }
+          },
+          "type": "object",
+          "metadata": {
+            "position": "Context",
+            "description": ""
+          }
+        },
+        "FieldSensorData": {
+          "properties": {
+            "DATA": {
+              "items": [
+                {
+                  "properties": {
+                    "UniqueID": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "UniqueID",
+                        "name": "UniqueID",
+                        "description": ""
+                      }
+                    },
+                    "SensorType": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "SensorType",
+                        "name": "SensorType",
+                        "description": ""
+                      }
+                    },
+                    "SensorChannel": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "SensorChannel",
+                        "name": "SensorChannel",
+                        "description": ""
+                      }
+                    },
+                    "Mode": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "Mode",
+                        "name": "Mode",
+                        "description": ""
+                      }
+                    },
+                    "DateTimeOffset": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "DateTimeOffset",
+                        "name": "DateTimeOffset",
+                        "description": ""
+                      }
+                    },
+                    "Unit": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "Unit",
+                        "name": "Unit",
+                        "description": ""
+                      }
+                    },
+                    "Sensor": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "Sensor",
+                        "name": "Sensor",
+                        "description": ""
+                      }
+                    },
+                    "UCL": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "UCL",
+                        "name": "UCL",
+                        "description": ""
+                      }
+                    },
+                    "Name": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "Name",
+                        "name": "Name",
+                        "description": ""
+                      }
+                    },
+                    "Result": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "Result",
+                        "name": "Result",
+                        "description": ""
+                      }
+                    },
+                    "Fail": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "Fail",
+                        "name": "Fail",
+                        "description": ""
+                      }
+                    }
+                  },
+                  "type": "object",
+                  "metadata": {
+                    "position": "1",
+                    "description": ""
+                  }
+                },
+                {
+                  "properties": {
+                    "Mode": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "Mode",
+                        "name": "Mode",
+                        "description": ""
+                      }
+                    }
+                  },
+                  "type": "object",
+                  "metadata": {
+                    "position": "2",
+                    "description": ""
+                  }
+                }
+              ],
+              "type": "array",
+              "metadata": {
+                "position": "DATA",
+                "description": ""
+              }
+            }
+          },
+          "type": "object",
+          "metadata": {
+            "position": "FieldSensorData",
+            "description": ""
+          }
+        },
+        "Time": {
+          "type": "string",
+          "metadata": {
+            "position": "Time",
+            "name": "Time",
+            "description": ""
+          }
+        }
+      },
+      "schemaKey": "http://json-schema.org/draft-04/schema#"
+    }
+  },
+  "timer": {
+    "type": "interval",
+    "metric": "seconds",
+    "value": 1
+  },
+  "ticksNumber": 0,
+  "isReplayLooped": false,
+  "devices": [
+    {
+      "id": "64063e9b518ed55844d126c4",
+      "modified": 1659963449,
+      "name": "DiSy_ouyuqfaz",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 1"
+        }
+      ]
+    },
+    {
+      "id": "396f6eb6f26ac86499867e8b",
+      "modified": 1659963449,
+      "name": "DiSy_fmrybbio",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 2"
+        }
+      ]
+    },
+    {
+      "id": "f0c2cb2f14ec5ded032d2375",
+      "modified": 1659963449,
+      "name": "DiSy_ldkvhezr",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 3"
+        }
+      ]
+    },
+    {
+      "id": "a7a3443d2ed65cc1ec7abcd4",
+      "modified": 1659963449,
+      "name": "DiSy_yumoocsc",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 4"
+        }
+      ]
+    },
+    {
+      "id": "a3cea3dddd5c7bbe8cfd83ab",
+      "modified": 1659963449,
+      "name": "DiSy_dckkpxkl",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 5"
+        }
+      ]
+    },
+    {
+      "id": "580f735763817f672b1cc1a8",
+      "modified": 1659963449,
+      "name": "DiSy_xtgzndxj",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 6"
+        }
+      ]
+    },
+    {
+      "id": "76e5b5364584e135c36ae3aa",
+      "modified": 1659963449,
+      "name": "DiSy_qaovysud",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 7"
+        }
+      ]
+    },
+    {
+      "id": "dbc11e2a73fe026af805d84b",
+      "modified": 1659963449,
+      "name": "DiSy_hrqzjbig",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 8"
+        }
+      ]
+    },
+    {
+      "id": "3f437f3421f814297c7c1f4b",
+      "modified": 1659963449,
+      "name": "DiSy_ymhhzhhw",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 9"
+        }
+      ]
+    },
+    {
+      "id": "8aa48ae24859e66b651f03d6",
+      "modified": 1659963449,
+      "name": "DiSy_gxfqlpju",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 10"
+        }
+      ]
+    },
+    {
+      "id": "f94ecb1475aa6bdc14ac5218",
+      "modified": 1659963449,
+      "name": "DiSy_tfvoghvy",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 11"
+        }
+      ]
+    },
+    {
+      "id": "d8761bfdb74570c9d41eba27",
+      "modified": 1659963449,
+      "name": "DiSy_hmjkybjm",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 12"
+        }
+      ]
+    },
+    {
+      "id": "8013f42b150afe8a36dc59e4",
+      "modified": 1659963449,
+      "name": "DiSy_bqgwydkz",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 13"
+        }
+      ]
+    },
+    {
+      "id": "a72e57f0a1e27e922651dd28",
+      "modified": 1659963449,
+      "name": "DiSy_dziagonc",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 14"
+        }
+      ]
+    },
+    {
+      "id": "5170c2a7048a674dfb484c33",
+      "modified": 1659963449,
+      "name": "DiSy_zhbpjmua",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 15"
+        }
+      ]
+    },
+    {
+      "id": "f34698f71faca0d23d1f2c6f",
+      "modified": 1659963449,
+      "name": "DiSy_sbnpdklk",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 16"
+        }
+      ]
+    },
+    {
+      "id": "ab2e6125f329d6bb5f53b860",
+      "modified": 1659963449,
+      "name": "DiSy_xbolkbws",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 17"
+        }
+      ]
+    },
+    {
+      "id": "893d08282030f6e4af98468f",
+      "modified": 1659963449,
+      "name": "DiSy_afcwuxjy",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 18"
+        }
+      ]
+    },
+    {
+      "id": "527e933703cd891044a854b3",
+      "modified": 1659963449,
+      "name": "DiSy_xcsehhhw",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 19"
+        }
+      ]
+    },
+    {
+      "id": "681943509bf5d1629d1df17c",
+      "modified": 1659963449,
+      "name": "DiSy_miedslee",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 20"
+        }
+      ]
+    },
+    {
+      "id": "2469853ca8c2122143cbbf8c",
+      "modified": 1659963449,
+      "name": "DiSy_skldqhcy",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 21"
+        }
+      ]
+    },
+    {
+      "id": "73df302ee0133ba3303161a9",
+      "modified": 1659963449,
+      "name": "DiSy_feoxuqam",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 22"
+        }
+      ]
+    },
+    {
+      "id": "9bb8bf265dc12c7c339a4452",
+      "modified": 1659963449,
+      "name": "DiSy_shsuepme",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 23"
+        }
+      ]
+    },
+    {
+      "id": "9b8fa04f7166569e5f19a75d",
+      "modified": 1659963449,
+      "name": "DiSy_ydxgdams",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 24"
+        }
+      ]
+    },
+    {
+      "id": "f18572b68edbc2a5a31bd7ec",
+      "modified": 1659963449,
+      "name": "DiSy_aydvwutr",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 25"
+        }
+      ]
+    },
+    {
+      "id": "4de826ee462f27962b081ab3",
+      "modified": 1659963449,
+      "name": "DiSy_eqypimaq",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 26"
+        }
+      ]
+    },
+    {
+      "id": "c05b95c121c20b0e704aa85d",
+      "modified": 1659963449,
+      "name": "DiSy_pixmlyjn",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 27"
+        }
+      ]
+    },
+    {
+      "id": "2fb38316ed3a3a540d26aa82",
+      "modified": 1659963449,
+      "name": "DiSy_ydvduywu",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 28"
+        }
+      ]
+    },
+    {
+      "id": "37b87584d9a716f0b27de2b7",
+      "modified": 1659963449,
+      "name": "DiSy_mhbzmtxv",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 29"
+        }
+      ]
+    },
+    {
+      "id": "e4f7e50cb551cd4c4d3ab5b6",
+      "modified": 1659963449,
+      "name": "DiSy_qetllmly",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 30"
+        }
+      ]
+    },
+    {
+      "id": "e9dd2153ab364632a453ddf3",
+      "modified": 1659963449,
+      "name": "DiSy_vuslamer",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 31"
+        }
+      ]
+    },
+    {
+      "id": "fa174d7ebfdd5a57ca895770",
+      "modified": 1659963449,
+      "name": "DiSy_wtbokfpw",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 32"
+        }
+      ]
+    },
+    {
+      "id": "7e30becb723955eb7bce7954",
+      "modified": 1659963449,
+      "name": "DiSy_noxgrsll",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 33"
+        }
+      ]
+    },
+    {
+      "id": "ff259f96f6d100415abc8c6c",
+      "modified": 1659963449,
+      "name": "DiSy_mrzzrdmc",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 34"
+        }
+      ]
+    },
+    {
+      "id": "3d88d4c559f1324c8500b070",
+      "modified": 1659963449,
+      "name": "DiSy_vyfoxjdk",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 35"
+        }
+      ]
+    },
+    {
+      "id": "823c7c29b28049bcbf532bb1",
+      "modified": 1659963449,
+      "name": "DiSy_aagpnyvd",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 36"
+        }
+      ]
+    },
+    {
+      "id": "f9461eb3a2d4752ac79013c4",
+      "modified": 1659963449,
+      "name": "DiSy_otssyaqt",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 37"
+        }
+      ]
+    },
+    {
+      "id": "1cc09c3273cf53d451d304b5",
+      "modified": 1659963449,
+      "name": "DiSy_cxsvmdnq",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 38"
+        }
+      ]
+    },
+    {
+      "id": "38ea1da17f90f399897967d4",
+      "modified": 1659963449,
+      "name": "DiSy_mccvrbxg",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 39"
+        }
+      ]
+    },
+    {
+      "id": "c869fcea56d4af3e8aeea290",
+      "modified": 1659963449,
+      "name": "DiSy_djagxwms",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 40"
+        }
+      ]
+    },
+    {
+      "id": "35e88637d6cb6f6155878312",
+      "modified": 1659963449,
+      "name": "DiSy_mxqiwazu",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 41"
+        }
+      ]
+    },
+    {
+      "id": "219d1f6d460a1406ad60c899",
+      "modified": 1659963449,
+      "name": "DiSy_bbgxdpqf",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 42"
+        }
+      ]
+    },
+    {
+      "id": "54e9862e9f27179f02699f5a",
+      "modified": 1659963449,
+      "name": "DiSy_kmssjrxn",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 43"
+        }
+      ]
+    },
+    {
+      "id": "a14b6a84718919771b0633c4",
+      "modified": 1659963449,
+      "name": "DiSy_badnimnb",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 44"
+        }
+      ]
+    },
+    {
+      "id": "c91c7aeb5d24216f456d5ec8",
+      "modified": 1659963449,
+      "name": "DiSy_ahofigxy",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 45"
+        }
+      ]
+    },
+    {
+      "id": "cd3f558a8bc793293c8b7452",
+      "modified": 1659963449,
+      "name": "DiSy_ujcqifhr",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 46"
+        }
+      ]
+    },
+    {
+      "id": "bea8dfd64f94ace185cf6427",
+      "modified": 1659963449,
+      "name": "DiSy_apcdnxkc",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 47"
+        }
+      ]
+    },
+    {
+      "id": "e1bffc3cc8e173f953cae834",
+      "modified": 1659963449,
+      "name": "DiSy_brxufijk",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 48"
+        }
+      ]
+    },
+    {
+      "id": "1430e368b34504c595e3864f",
+      "modified": 1659963449,
+      "name": "DiSy_efcsdgrz",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 49"
+        }
+      ]
+    },
+    {
+      "id": "ed5bf4f02449ce25e79a9ecc",
+      "modified": 1659963449,
+      "name": "DiSy_rxpbcbco",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 50"
+        }
+      ]
+    },
+    {
+      "id": "b7a48c407b74f976c618276e",
+      "modified": 1659963449,
+      "name": "DiSy_lyifrxcw",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 51"
+        }
+      ]
+    },
+    {
+      "id": "ef571080fb9e0c313d7672ed",
+      "modified": 1659963449,
+      "name": "DiSy_oggsblqv",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 52"
+        }
+      ]
+    },
+    {
+      "id": "b6abb6253e2fb6265a116238",
+      "modified": 1659963449,
+      "name": "DiSy_roqvlatr",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 53"
+        }
+      ]
+    },
+    {
+      "id": "835a5526f3a21df16f18a00d",
+      "modified": 1659963449,
+      "name": "DiSy_snqxkwja",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 54"
+        }
+      ]
+    },
+    {
+      "id": "06c3157f288e91fab6fe8852",
+      "modified": 1659963449,
+      "name": "DiSy_coftulpl",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 55"
+        }
+      ]
+    },
+    {
+      "id": "7685c4a048c5e5d2b7326f66",
+      "modified": 1659963449,
+      "name": "DiSy_yhdduggt",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 56"
+        }
+      ]
+    },
+    {
+      "id": "1c80380c6a873c239d1b3275",
+      "modified": 1659963449,
+      "name": "DiSy_alxuouaf",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 57"
+        }
+      ]
+    },
+    {
+      "id": "5c95e23e111fbbbf7cc1d63e",
+      "modified": 1659963449,
+      "name": "DiSy_wxtqoasu",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 58"
+        }
+      ]
+    },
+    {
+      "id": "1329d5c48ffcbb8e409e8f2e",
+      "modified": 1659963449,
+      "name": "DiSy_oxhkpnvp",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 59"
+        }
+      ]
+    },
+    {
+      "id": "f9ff5725f7a2bae5ece6e2fb",
+      "modified": 1659963449,
+      "name": "DiSy_ggvlrvrp",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 60"
+        }
+      ]
+    },
+    {
+      "id": "0ed68cb1976719af81e6d3a6",
+      "modified": 1659963449,
+      "name": "DiSy_beqhusol",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 61"
+        }
+      ]
+    },
+    {
+      "id": "54063a8c041bffc2be761b00",
+      "modified": 1659963449,
+      "name": "DiSy_ittbdxwr",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 62"
+        }
+      ]
+    },
+    {
+      "id": "81fb76696794d1d02b7f845d",
+      "modified": 1659963449,
+      "name": "DiSy_fgnkyrrj",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 63"
+        }
+      ]
+    },
+    {
+      "id": "9f2dab727232da927fb740f3",
+      "modified": 1659963449,
+      "name": "DiSy_kozrseel",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 64"
+        }
+      ]
+    },
+    {
+      "id": "12d92793b3e4a7e63ffc0428",
+      "modified": 1659963449,
+      "name": "DiSy_pjenjyaw",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 65"
+        }
+      ]
+    },
+    {
+      "id": "bc49672b6c065bb06a26c8c2",
+      "modified": 1659963449,
+      "name": "DiSy_spuztuvy",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 66"
+        }
+      ]
+    },
+    {
+      "id": "1592428ba3c85e18af7b896b",
+      "modified": 1659963449,
+      "name": "DiSy_tpmcyfmk",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 67"
+        }
+      ]
+    },
+    {
+      "id": "d9e292c124ae4d28e482c2dd",
+      "modified": 1659963449,
+      "name": "DiSy_fafjatsp",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 68"
+        }
+      ]
+    },
+    {
+      "id": "a59a93186eb7ebb891126bed",
+      "modified": 1659963449,
+      "name": "DiSy_khviwnbn",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 69"
+        }
+      ]
+    },
+    {
+      "id": "358a4f7cc3825ce5365754a4",
+      "modified": 1659963449,
+      "name": "DiSy_aqnulbel",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 70"
+        }
+      ]
+    },
+    {
+      "id": "402aa272a98c2c7e412c223d",
+      "modified": 1659963449,
+      "name": "DiSy_ywcomngs",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 71"
+        }
+      ]
+    },
+    {
+      "id": "8d30d2121017833c1cdd335b",
+      "modified": 1659963449,
+      "name": "DiSy_udndcwvj",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 72"
+        }
+      ]
+    },
+    {
+      "id": "e7dde02997a9b43db2cc27c0",
+      "modified": 1659963449,
+      "name": "DiSy_joeffgmp",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 73"
+        }
+      ]
+    },
+    {
+      "id": "6d926e76b4cb6b3c8cec10aa",
+      "modified": 1659963449,
+      "name": "DiSy_qicmdxxv",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 74"
+        }
+      ]
+    },
+    {
+      "id": "c8c16f267d063bc5e3310a8e",
+      "modified": 1659963449,
+      "name": "DiSy_mtsfrpiy",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 75"
+        }
+      ]
+    },
+    {
+      "id": "ba84b583cc9c32e6a51566dc",
+      "modified": 1659963449,
+      "name": "DiSy_elypdjph",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 76"
+        }
+      ]
+    },
+    {
+      "id": "17f7591f484e49a15abb0649",
+      "modified": 1659963449,
+      "name": "DiSy_mzsclqdz",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 77"
+        }
+      ]
+    },
+    {
+      "id": "24e42dddac6423c8cb54f11e",
+      "modified": 1659963449,
+      "name": "DiSy_ahwfhqhn",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 78"
+        }
+      ]
+    },
+    {
+      "id": "26067db195537644f9bf4711",
+      "modified": 1659963449,
+      "name": "DiSy_wjzqnjse",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 79"
+        }
+      ]
+    },
+    {
+      "id": "afabea6b29024900239f74f1",
+      "modified": 1659963449,
+      "name": "DiSy_hltjrfwq",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 80"
+        }
+      ]
+    },
+    {
+      "id": "ef34579fe2a46b8350600a43",
+      "modified": 1659963449,
+      "name": "DiSy_tepzcace",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 81"
+        }
+      ]
+    },
+    {
+      "id": "388e8d520371f733db231a9d",
+      "modified": 1659963449,
+      "name": "DiSy_azsadztt",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 82"
+        }
+      ]
+    },
+    {
+      "id": "e590f09d18eb57b9d2ef4835",
+      "modified": 1659963449,
+      "name": "DiSy_tgtrjfmk",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 83"
+        }
+      ]
+    },
+    {
+      "id": "3879ed3beae31e8ca4b0bfe6",
+      "modified": 1659963449,
+      "name": "DiSy_aqszrqrs",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 84"
+        }
+      ]
+    },
+    {
+      "id": "d9772c185048096ac9c8c38c",
+      "modified": 1659963449,
+      "name": "DiSy_ippsvzsk",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 85"
+        }
+      ]
+    },
+    {
+      "id": "cbbd1666cc9fdc4db0aead5b",
+      "modified": 1659963449,
+      "name": "DiSy_aqyzyghl",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 86"
+        }
+      ]
+    },
+    {
+      "id": "e561693b44be8590fa391b0f",
+      "modified": 1659963449,
+      "name": "DiSy_jsuoraom",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 87"
+        }
+      ]
+    },
+    {
+      "id": "7a697e0bf7bc0d2e39de9fa0",
+      "modified": 1659963449,
+      "name": "DiSy_usvxbhbp",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 88"
+        }
+      ]
+    },
+    {
+      "id": "c665aacb4f38ced51b0cf3d3",
+      "modified": 1659963449,
+      "name": "DiSy_zremkhfs",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 89"
+        }
+      ]
+    },
+    {
+      "id": "4361c5d7b509902de590693d",
+      "modified": 1659963449,
+      "name": "DiSy_jcgceihj",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 90"
+        }
+      ]
+    },
+    {
+      "id": "4307706cbab7e3b300c00a30",
+      "modified": 1659963449,
+      "name": "DiSy_nthhoios",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 91"
+        }
+      ]
+    },
+    {
+      "id": "5557a3095a6b88044687d2ec",
+      "modified": 1659963449,
+      "name": "DiSy_nirdvsqs",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 92"
+        }
+      ]
+    },
+    {
+      "id": "34102f7a4eb3c012ae1f96e9",
+      "modified": 1659963449,
+      "name": "DiSy_ufhqoinq",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 93"
+        }
+      ]
+    },
+    {
+      "id": "c62a0fae09d2c9ed232a1dbc",
+      "modified": 1659963449,
+      "name": "DiSy_xbjitjjz",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 94"
+        }
+      ]
+    },
+    {
+      "id": "75d0a9bd42d68335dfd5dedc",
+      "modified": 1659963449,
+      "name": "DiSy_ruivtwre",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 95"
+        }
+      ]
+    },
+    {
+      "id": "a78283727fafbf232aa2d79b",
+      "modified": 1659963449,
+      "name": "DiSy_iahvwruq",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 96"
+        }
+      ]
+    },
+    {
+      "id": "9987482902b6d2fd7a89a139",
+      "modified": 1659963449,
+      "name": "DiSy_lalapvtm",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 97"
+        }
+      ]
+    },
+    {
+      "id": "472d2d053dfd40f069aa9773",
+      "modified": 1659963449,
+      "name": "DiSy_ikaqillb",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 98"
+        }
+      ]
+    },
+    {
+      "id": "ce0858323993f158f725642f",
+      "modified": 1659963449,
+      "name": "DiSy_onlynjiv",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 99"
+        }
+      ]
+    },
+    {
+      "id": "f506cde4d84abc793545ed70",
+      "modified": 1659963449,
+      "name": "DiSy_buwapwzm",
+      "targetSystems": [
+        {
+          "id": "62c2b5684e127a636e3b07ad",
+          "modified": 0,
+          "name": "UDFD4",
+          "type": "dummy"
+        }
+      ],
+      "properties": [
+        {
+          "name": "UniqueID",
+          "value": "deviec MQTT 100"
+        }
+      ]
+    }
+  ],
+  "deviceInjector": {
+    "rule": "round_robin"
+  },
+  "generator": {
+    "type": "schema_based",
+    "schema": {
+      "metadata": {
+        "type": "json"
+      },
+      "type": "object",
+      "properties": {
+        "Context": {
+          "rule": {
+            "type": "device_property",
+            "propertyName": "UniqueID"
+          },
+          "type": "object",
+          "metadata": {
+            "position": "Context",
+            "description": ""
+          },
+          "properties": {
+            "UDFVersion": {
+              "type": "string",
+              "metadata": {
+                "position": "UDFVersion",
+                "name": "UDFVersion",
+                "description": ""
+              },
+              "rule": {
+                "type": "literal_string",
+                "value": "1"
+              }
+            },
+            "Type": {
+              "type": "string",
+              "metadata": {
+                "position": "Type",
+                "name": "Type",
+                "description": ""
+              },
+              "rule": {
+                "type": "literal_string",
+                "value": "Temp"
+              }
+            },
+            "StartDateTime": {
+              "type": "string",
+              "metadata": {
+                "position": "StartDateTime",
+                "name": "StartDateTime",
+                "description": "StartDateTime"
+              },
+              "rule": {
+                "type": "literal_string",
+                "value": "23.09.2021"
+              }
+            },
+            "DATA": {
+              "rule": {
+                "type": "device_property",
+                "propertyName": "UniqueID"
+              },
+              "type": "array",
+              "metadata": {
+                "position": "DATA",
+                "description": ""
+              },
+              "items": [
+                {
+                  "rule": {
+                    "type": "device_property",
+                    "propertyName": "UniqueID"
+                  },
+                  "type": "object",
+                  "metadata": {
+                    "position": "1",
+                    "description": ""
+                  },
+                  "properties": {
+                    "UniqueID": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "UniqueID",
+                        "name": "UniqueID",
+                        "description": ""
+                      },
+                      "rule": {
+                        "type": "device_property",
+                        "propertyName": "UniqueID"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "Device": {
+              "type": "string",
+              "metadata": {
+                "position": "Device",
+                "name": "Device",
+                "description": "Device"
+              },
+              "rule": {
+                "type": "device_property",
+                "propertyName": "UniqueID"
+              }
+            }
+          }
+        },
+        "FieldSensorData": {
+          "rule": {
+            "type": "device_property",
+            "propertyName": "UniqueID"
+          },
+          "type": "object",
+          "metadata": {
+            "position": "FieldSensorData",
+            "description": ""
+          },
+          "properties": {
+            "DATA": {
+              "rule": {
+                "type": "device_property",
+                "propertyName": "UniqueID"
+              },
+              "type": "array",
+              "metadata": {
+                "position": "DATA",
+                "description": ""
+              },
+              "items": [
+                {
+                  "rule": {
+                    "type": "device_property",
+                    "propertyName": "UniqueID"
+                  },
+                  "type": "object",
+                  "metadata": {
+                    "position": "1",
+                    "description": ""
+                  },
+                  "properties": {
+                    "UniqueID": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "UniqueID",
+                        "name": "UniqueID",
+                        "description": ""
+                      },
+                      "rule": {
+                        "type": "literal_string",
+                        "value": "1"
+                      }
+                    },
+                    "SensorType": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "SensorType",
+                        "name": "SensorType",
+                        "description": ""
+                      },
+                      "rule": {
+                        "type": "literal_string",
+                        "value": "Temp"
+                      }
+                    },
+                    "SensorChannel": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "SensorChannel",
+                        "name": "SensorChannel",
+                        "description": ""
+                      },
+                      "rule": {
+                        "type": "literal_string",
+                        "value": "CORETS0"
+                      }
+                    },
+                    "Mode": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "Mode",
+                        "name": "Mode",
+                        "description": ""
+                      },
+                      "rule": {
+                        "type": "literal_string",
+                        "value": "1"
+                      }
+                    },
+                    "DateTimeOffset": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "DateTimeOffset",
+                        "name": "DateTimeOffset",
+                        "description": ""
+                      },
+                      "rule": {
+                        "type": "literal_string",
+                        "value": "1000"
+                      }
+                    },
+                    "Unit": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "Unit",
+                        "name": "Unit",
+                        "description": ""
+                      },
+                      "rule": {
+                        "type": "literal_string",
+                        "value": "degC"
+                      }
+                    },
+                    "Sensor": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "Sensor",
+                        "name": "Sensor",
+                        "description": ""
+                      },
+                      "rule": {
+                        "type": "literal_string",
+                        "value": "Tmon"
+                      }
+                    },
+                    "UCL": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "UCL",
+                        "name": "UCL",
+                        "description": ""
+                      },
+                      "rule": {
+                        "type": "literal_string",
+                        "value": "65"
+                      }
+                    },
+                    "Name": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "Name",
+                        "name": "Name",
+                        "description": ""
+                      },
+                      "rule": {
+                        "type": "literal_string",
+                        "value": "TempS"
+                      }
+                    },
+                    "Result": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "Result",
+                        "name": "Result",
+                        "description": ""
+                      },
+                      "rule": {
+                        "type": "custom_function",
+                        "function": "\n/**\n * \n * Please, note the following information:\n * - to print information to docker console use \"print\" (console.log is not available)\n * - \"momentjs\" and \"lodash\" libraries are supported and available in global scope\n * \n * @param  {object} ruleState may be used to store information between iterations\n * @param  {object} sessionState may be used to store information between rules\n * @param  {string} deviceName device name\n * @return {string} value that will be populated to specified property\n */\nfunction custom(ruleState, sessionState, deviceName) { \n    var result=\"\";\n     result+=parseFloat((Math.random() * (80.9 - 20.8 + 1) + 20.8).toString()).toFixed(2);\n    return result; \n\n}\n"
+                      }
+                    },
+                    "Fail": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "Fail",
+                        "name": "Fail",
+                        "description": ""
+                      },
+                      "rule": {
+                        "type": "literal_string",
+                        "value": "1"
+                      }
+                    }
+                  }
+                },
+                {
+                  "rule": {
+                    "type": "device_property",
+                    "propertyName": "UniqueID"
+                  },
+                  "type": "object",
+                  "metadata": {
+                    "position": "2",
+                    "description": ""
+                  },
+                  "properties": {
+                    "Mode": {
+                      "type": "string",
+                      "metadata": {
+                        "position": "Mode",
+                        "name": "Mode",
+                        "description": ""
+                      },
+                      "rule": {
+                        "type": "literal_string",
+                        "value": "Channel1"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "Time": {
+          "type": "string",
+          "metadata": {
+            "position": "Time",
+            "name": "Time",
+            "description": ""
+          },
+          "rule": {
+            "type": "custom_function",
+            "function": "\n/**\n * \n * Please, note the following information:\n * - to print information to docker console use \"print\" (console.log is not available)\n * - \"momentjs\" and \"lodash\" libraries are supported and available in global scope\n * \n * @param  {object} ruleState may be used to store information between iterations\n * @param  {object} sessionState may be used to store information between rules\n * @param  {string} deviceName device name\n * @return {string} value that will be populated to specified property\n */\nfunction custom(ruleState, sessionState, deviceName) { \n  var CurrentDate = moment().format();\n    return CurrentDate;\n}\n"
+          }
+        }
+      },
+      "schemaKey": "http://json-schema.org/draft-04/schema#"
+    }
+  },
+  "targetSystem": {
+    "id": "62bd175c717aad1f392eff01",
+    "modified": 1659680079,
+    "name": "UDF",
+    "type": "dummy"
+  },
+  "replayLooped": false
+}
